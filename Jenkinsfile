@@ -23,7 +23,7 @@ pipeline
      {
          steps
          {
-             sh 'cp -R /root/.jenkins/workspace/s3task/targett/* /opt/apache-tomcat-8.5.3/webapps'
+             sh 'cp -R /root/.jenkins/workspace/s3task/target/* /opt/apache-tomcat-8.5.3/webapps'
          }
     }
     }
