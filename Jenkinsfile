@@ -19,5 +19,12 @@ pipeline
              sh 'find / -name *.war'
          }
      }
+        stage ('deploy')
+     {
+         steps
+         {
+             sh 'cp -R /root/.jenkins/workspace/s3task/targett/* /opt/apache-tomcat-8.5.3/webapps'
+         }
+    }
     }
 }
